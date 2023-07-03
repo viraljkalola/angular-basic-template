@@ -1,0 +1,29 @@
+<div class="container">
+  <h2 class="py-4">Cars</h2>
+  <button type="button" class="btn btn-sm btn-outline-primary btn-add-size" (click)="addCar()">Add</button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Model</th>
+        <th scope="col">Year</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let car of cars; let i = index">
+        <th scope="row" class="srno">{{i + 1}}</th>
+        <td>{{car.brand}}</td>
+        <td>{{car.model}}</td>
+        <td>{{car.year}}</td>
+        <td class="btn-edit-margin"><button type="button" class="btn btn-sm btn-outline-primary btn-edit-size"
+            (click)="editCar(car)">Edit</button>
+        </td>
+        <td class="btn-delete-margin"><button type="button" class="btn btn-sm btn-outline-primary btn-delete-size"
+            (click)="deleteCar(i)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

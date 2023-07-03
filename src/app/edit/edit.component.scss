@@ -1,0 +1,54 @@
+.card-size {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: auto;
+  max-width: 90%;
+}
+
+.card-header-size {
+  height: 70px;
+}
+
+h2 {
+  padding-top: 22px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+label {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+input,
+span {
+  height: 50px;
+}
+
+.error-margin {
+  margin-bottom: 20px;
+}
+
+.submit-margin {
+  margin-top: 3%;
+}
+
+.btn-size {
+  font-size: 21px;
+}
+
+.btn-cancel-size {
+  margin-left: 10px;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.year-size {
+  width: 262px;
+}
+
+.ng-invalid .invalid-feedback {
+  display: block;
+}
